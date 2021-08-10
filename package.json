@@ -1,0 +1,28 @@
+{
+  "name": "Blogware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjayB-28/Blogware.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjayB-28/Blogware/issues"
+  },
+  "homepage": "https://github.com/SanjayB-28/Blogware#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
