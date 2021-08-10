@@ -1,6 +1,10 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const articleRouter = require('./routes/articles')
 const app = express()
+
+mongoose.connect('mongodb://localhost/blogware',{ 
+   useNewUrlParser: true, useUnifiedTopology: true })
 
 app.set('view engine', 'ejs')
 
@@ -17,6 +21,6 @@ app.get('/',(req,res)=>{
        createdAt: new Date(),
        description: 'Test description 2'
     }]
-    res.render('index', {articles: articles})
+    res.render('articles/index', {articles: articles})
 })
 app.listen(5000)
