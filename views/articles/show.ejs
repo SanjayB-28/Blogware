@@ -8,16 +8,22 @@
     <title>Blogware</title>
 </head>
 <body>
-    <div class="container">
-       <h1 class="mb-1"><%= article.title %></h1>
-       <div class="text-muted mb-2">
+    <div class="container card-body">
+       <h1 class="mb-4"><%= article.title %></h1>
+       <div class="card-title text-muted mb-4"> Created At: 
            <%= article.createdAt.toLocaleDateString() %>
         </div>
+        <div class="card-text mb-4">
         <a href="/" class="btn btn-secondary">All Articles</a>
         <a href="/articles/edit/<%= article.id %>" 
             class="btn btn-info">Edit</a>
-        <div>
+        </div>
+        <div class="blockquote mb-1"> Contents:</div>
+        <div  class="card mt-2">
+        
+        <div class=" card-header">
         <%- article.sanitizedHtml %>
+        </div>
         </div>
     </div>
 </body>
