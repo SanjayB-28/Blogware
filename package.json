@@ -35,6 +35,8 @@
     "slugify": "^1.6.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^2.2.3",
+    "@types/marked": "^2.0.4",
     "nodemon": "^2.0.12"
   }
 }
