@@ -1,1 +1,1 @@
-# Blogware
+# Blogware - Decentralized Chat Application
